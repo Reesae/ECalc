@@ -1,0 +1,33 @@
+
+#ifndef SETTINGS_H_
+#define SETTINGS_H_
+
+namespace settings {
+constexpr int FRAME_LIMIT = 60;
+constexpr float VIDEO_WIDTH = 1920.0f;
+constexpr float VIDEO_HEIGHT = 1080.0f;
+
+constexpr float LISTVIEW_WIDTH = 300.f;
+constexpr float LISTVIEW_HEIGHT = 1080.f;
+constexpr float LISTVIEW_RELATIVE_WIDTH = LISTVIEW_WIDTH / VIDEO_WIDTH;
+constexpr float LISTVIEW_RELATIVE_HEIGHT = LISTVIEW_HEIGHT / VIDEO_HEIGHT;
+
+constexpr float ROOMVIEW_WIDTH = 1620.f;
+constexpr float ROOMVIEW_HEIGHT = 1080.f;
+constexpr float ROOMVIEW_RELATIVE_WIDTH = ROOMVIEW_WIDTH / VIDEO_WIDTH;
+constexpr float ROOMVIEW_RELATIVE_HEIGHT = ROOMVIEW_HEIGHT / VIDEO_HEIGHT;
+
+constexpr float STATVIEW_WIDTH = 580.f;
+constexpr float STATVIEW_HEIGHT = 540.f;
+constexpr float STATVIEW_START_POS_X = (VIDEO_WIDTH - STATVIEW_WIDTH) / VIDEO_WIDTH;
+constexpr float STATVIEW_START_POS_Y = 0.5f;
+constexpr float STATVIEW_RELATIVE_WIDTH = STATVIEW_WIDTH / VIDEO_WIDTH;
+constexpr float STATVIEW_RELATIVE_HEIGHT = STATVIEW_HEIGHT / VIDEO_HEIGHT;
+
+constexpr int MOUSE_WHEEL_SCROLL_MULTPLIER = 20;
+
+constexpr int ROOM_ITEM_PROPERTIES_OFFSET = 30;
+
+}
+
+#endif /* SETTINGS_H_ */
